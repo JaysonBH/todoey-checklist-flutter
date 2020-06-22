@@ -2,17 +2,13 @@ import 'package:flutter/material.dart';
 import '../widgets/tasks_list.dart';
 
 class TasksScreen extends StatelessWidget {
-  Widget buildBottomSheet(BuildContext context) {
-    return Container();
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       floatingActionButton: FloatingActionButton(
         backgroundColor: Colors.lightBlueAccent,
         onPressed: () {
-          showModalBottomSheet(context: context, builder: buildBottomSheet);
+          showModalBottomSheet(context: context, builder: (context) => Container());
         },
         child: Icon(Icons.add),
       ),
